@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>成功界面</title>
+    <script type="text/javascript">
+        alert("即将在3秒内跳转到新华招聘网");
+        onload=function(){
+            setInterval(go, 1000);
+        };
+        var x=3; //利用了全局变量来执行
+        function go(){
+            x--;
+            if(x>0){
+                document.getElementById("sp").innerHTML=x; //每次设置的x的值都不一样了。
+            }else{
+                location.href='main1.jsp';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>登录成功</h1>
+</body>
+</html>
